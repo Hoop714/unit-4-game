@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+
+	<!--Added link to Reset Style-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Added link to CSS Style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+<div class="jumbotron">
+    <div class="container">
+    <h1 class="text-center">Crystal Collector Game</h1>
+    </div>
+</div>
+
+<div  class="ruledisplay">
+    <h1>How to play</h1>      
+  <p class="ruletext">You will be given a random number at the start of the game.</p>
+  <p class="ruletext">There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+  <p class="ruletext">You win the game by matching your total score to the MAGIC NUMBER, you lose the game if YOUR NUMBER goes above the MAGIC NUMBER.</p>
+  <p class="ruletext"> The value of each crystal is hidden from you until you click on it.</p>
+  <p class="ruletext">Each time when the game starts, the game will change the values of each crystal.</p>
+</div>
+
+<div class="text-center">
+<div class= "crystal-images"></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+<div  class="guessnumber">
+    <h2>Magic Number </h2> 
+    <div id = "magic-number"></div> 
+    </div> 
+</div>
+     <div class="col-md-4">
+<div class ="totalscore" >
+    <h2> Your Number</h2> 
+    <div class ="your-number" >
+        <div id = "your-number"></div>  
+    </div>
+    </div>
+</div>
+     <div class="col-md-4">
+<div class ="record" >
+    <div class = "win-loss-record"></div>  
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom color">
+    <div class="container text-center">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="footer"> &copy; Copyright 2019</div>
+          </div>
+      </div>  
+    </nav>
+
+</div>	
+
+	<!-- Added link to Javascript-->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
